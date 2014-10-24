@@ -6,21 +6,15 @@
 
 public class Problem5 {
 
-    public static boolean isDivisible(int n) {
-        int temp = 0;
-        for(int x = 1; x <= 20; x++)
-            if(n % x == 0) temp++;
-        if(temp == 20) return true;
-        else return false;
-    }
-
     public static int smallestNumber() {
-        int x = 1;
+        int i = 20;
         while(true) {
-            if(isDivisible(x)) break;
-            x++;
+            if((i % 1 == 0) && (i % 2 == 0) && (i % 3 == 0) && (i % 5 == 0) &&
+                (i % 7 == 0) && (i % 9 == 0) && (i % 11 == 0) && (i % 13 == 0) &&
+                    (i % 16 == 0) && (i % 17 == 0) && (i % 19 == 0)) break;
+            i += 20;
         }
-        return x;
+        return i;
     }
 
     public static void main(String[] args) {
