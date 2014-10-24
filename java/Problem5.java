@@ -24,6 +24,10 @@ public class Problem5 {
     }
 
     public static void main(String[] args) {
+        // Class Timer.java found in Java Problems
+        // Directory.
+        Timer timer = new Timer("smallestNumber");
         System.out.println(smallestNumber());
+        System.out.println(timer.runTime());
     }
 }
