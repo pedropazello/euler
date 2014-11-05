@@ -6,25 +6,21 @@
 
 class Problem2 {
     public static boolean isEven(int num) {
-        if(num % 2 == 0)
-            return true;
-        else
-            return false;
+        if(num % 2 == 0) return true;
+        else return false;
     }
-    public static int fib() {
+    public static int fib(int limit) {
         int a = 1, b = a + a, sum = 2;
-        while(a + b < 4000000) {
+        while(a + b < limit) {
             a += b;
             b += a;
-            if(isEven(a))
-                sum += a;
-            if(isEven(b))
-                sum += b;
+            if(isEven(a)) sum += a;
+            if(isEven(b)) sum += b;
         }
         return sum;
     }
 
     public static void main(String[] args) {
-        System.out.println(fib());
+        System.out.println(fib(4000000));
     }
 }

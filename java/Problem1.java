@@ -5,23 +5,15 @@
 class Problem1 {
 
     public static boolean isMultiple(int n) {
-        if(n % 3 == 0)
-            return true;
-
-        if(n % 5 == 0)
-            return true;
-
-        else
-            return false;
+        if(n % 3 == 0) return true;
+        if(n % 5 == 0) return true;
+        else return false;
     }
 
     public static int findSum(int limit) {
         int sum = 0;
-        for(int x = 1; x < limit; x++) {
-            if(isMultiple(x)) {
-                sum += x;
-            }
-        }
+        for(int x = 1; x < limit; x++)
+            if(isMultiple(x)) sum += x;
         return sum;
     }
 
