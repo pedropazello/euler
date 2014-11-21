@@ -10,7 +10,7 @@ public class Problem6 {
 	public static int diffBetweenSums() {
 		int sumSquares = 0;
 		for(int x = 1; x <= 100; x++) 
-			sumSquares += (int)Math.pow(x, 2);;
+			sumSquares += (int)Math.pow(x, 2);
 
 		int sum = 0;
 		for(int x = 1; x <= 100; x++)
